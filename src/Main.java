@@ -7,8 +7,7 @@ import java.io.InputStreamReader;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        TwoPointer02 tp = new TwoPointer02();
-
+        TwoPointer02 twoPointer02 = new TwoPointer02();
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
 
@@ -27,7 +26,7 @@ public class Main {
             arrTwo[i] = Integer.parseInt(st.nextToken());
         }
 
-        System.out.println(tp.solution(arrOne, arrTwo));
+        twoPointer02.solution(arrOne, arrTwo);
     }
 }
 
