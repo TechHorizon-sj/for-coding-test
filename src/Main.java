@@ -1,4 +1,4 @@
-import twoPointer.TwoPointer02;
+import twoPointer.TwoPointer03;
 
 import java.io.IOException;
 import java.io.BufferedReader;
@@ -7,12 +7,11 @@ import java.io.InputStreamReader;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        TwoPointer02 twoPointer02 = new TwoPointer02();
+        TwoPointer03 twoPointer03 = new TwoPointer03();
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
 
         int arrOneLen = Integer.parseInt(st.nextToken());
-        int arrTwoLen = Integer.parseInt(st.nextToken());
 
         int[] arrOne = new int[arrOneLen];
         st = new StringTokenizer(br.readLine());
@@ -20,13 +19,15 @@ public class Main {
             arrOne[i] = Integer.parseInt(st.nextToken());
         }
 
+        int arrTwoLen = Integer.parseInt(br.readLine());
+
         int[] arrTwo = new int[arrTwoLen];
         st = new StringTokenizer(br.readLine());
         for (int i = 0; i < arrTwoLen; i++) {
             arrTwo[i] = Integer.parseInt(st.nextToken());
         }
 
-        twoPointer02.solution(arrOne, arrTwo);
+        twoPointer03.solution(arrOne, arrTwo);
     }
 }
 
