@@ -1,5 +1,5 @@
-import twoPointer.TwoPointer03;
 import twoPointer.TwoPointer04;
+import twoPointer.TwoPointer05;
 
 import java.io.IOException;
 import java.io.BufferedReader;
@@ -8,13 +8,13 @@ import java.io.InputStreamReader;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        TwoPointer04 tp = new TwoPointer04();
+        TwoPointer05 tp = new TwoPointer05();
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
 
         int N = Integer.parseInt(st.nextToken());
-        int K = Integer.parseInt(st.nextToken());
+        int M = Integer.parseInt(st.nextToken());
 
         st = new StringTokenizer(br.readLine());
         int[] arr = new int[N];;
@@ -22,7 +22,7 @@ public class Main {
             arr[i] = Integer.parseInt(st.nextToken());
         }
 
-        tp.solution(N, K, arr);
+        tp.solution(N, M, arr);
     }
 }
 
